@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xác nhận tuổi</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #ff4444;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #ff2222;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>web dành cho trẻ em trên 18 tuổi 🚫</h1>
+  <p>mày đủ 18 tuổi chưa?</p>
+  <div>
+    <button onclick="enterSite()">tao đủ 18 tuổi  ✅</button>
+    <button onclick="deny()">Chưa ❌</button>
+  </div>
+
+  <script>
+    function enterSite() {
+      window.location.href = "menu.html"; 
+    }
+    function deny() {
+      alert("Địt con mẹ mày đéo đủ tuổi, cút mẹ mày đi.")
+       
+    }
+  </script>
+</body>
+</html>
